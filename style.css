@@ -1,0 +1,212 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #472F88;
+    height: 400px;
+}
+
+header .header_container {
+    width: 90vw;
+    padding: 70px 0 20px 0;
+    margin: auto;
+}
+
+header .header_container img {
+    height: 9vh;
+}
+
+header .header_container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+header .header_container p {
+    color: #FFF;
+    margin-bottom: 40px;
+}
+
+header .header_container .button_service {
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 260px;
+    margin: auto;
+}
+
+header .header_container a {
+    align-self: center;
+    color: #472F88;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+main .service_container {
+    margin: 45px auto;
+}
+
+main .service_container div {
+    text-align: center;
+}
+
+main .service_container div h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main .service_container div p {
+    font-weight: 500;
+    margin: auto;
+    width: 330px;
+}
+
+main .composantes_container {
+    margin: 25px auto;
+    width: 85vw;
+}
+
+main .composantes_container h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 13px 25px;
+}
+
+main .composantes_container .purplebar {
+    background-color: #472F88;
+    height: 12px;
+    width: 100px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+main .composantes_container div {
+    text-align: center;
+    position: relative;
+    width: 325px;
+    margin: 30px auto;
+}
+
+main .composantes_container div h2 {
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 300px;
+    z-index: 2;
+
+    color: #FFF;
+    text-align: center;
+}
+
+main .composantes_container div img {
+    opacity: 0.7;
+    z-index: 1;
+}
+
+main .composantes_container .purple_bg {
+    background-color: #472F88;
+    border-radius: 7px;
+    margin: 0;
+
+
+    height: 337px;
+    width: 325px;
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+footer {
+    background-color: #472F88;
+    padding: 30px 0;
+}
+
+footer div {
+    margin: 20px auto;
+    width: 300px;
+}
+
+footer div h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #FFF;
+    margin-bottom: 11px;
+}
+
+footer div h3 {
+    color: #FFF;
+
+    margin-top: 8px;
+}
+
+
+footer div p {
+    color: #FFF;
+}
+
+footer div a {
+    color: #FFF;
+}
+
+footer .social img {
+    margin: auto;
+}
+
+footer .address {
+    line-height: 1.5;
+}
+
+footer .conditions a:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 700px) {
+    header .header_container p{
+        width: 50vw;
+    }
+
+    header .header_container .button_service {
+        margin: 0;
+    }
+
+    main .service_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .service_container .produire {
+        margin-top: 20px;
+    }
+
+    footer .footer_container {
+        display: flex;
+        width: 90vw;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    main .composantes_container{
+        width: 90vw;
+    }
+
+    main .composantes_container .img_box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
