@@ -73,18 +73,10 @@ main .composantes_container {
     width: 85vw;
 }
 
-main .composantes_container h2 {
+/* main .composantes_container h2 {
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0 0 13px 25px;
-}
-
-main .composantes_container .purplebar {
-    background-color: #472F88;
-    height: 12px;
-    width: 100px;
-    border-radius: 25px;
-    margin-left: 25px;
 }
 
 main .composantes_container div {
@@ -121,10 +113,122 @@ main .composantes_container .purple_bg {
     width: 325px;
     z-index: -1;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 6px;
+    left: 5px;
 }
 
+main .composantes_container .title_composantes{
+    position: relative;
+}
+
+main .composantes_container .title_composantes h2{
+    position: inherit;
+    top: 0%;
+    left: 0%;
+    color: black;
+    margin: 0;
+    text-align: left;
+}
+
+main .composantes_container .purplebar {
+    background-color: #472F88;
+    height: 12px;
+    width: 100px;
+    border-radius: 25px;
+    margin: 10px auto 0 0;
+} */
+
+
+
+main .composantes_container .title_composantes h2 {
+    color: black;
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+main .composantes_container .purplebar {
+    background-color: #472F88;
+    height: 12px;
+    width: 100px;
+    border-radius: 25px;
+    margin: 10px auto 0 0;
+}
+
+main .composantes_container .img_box .pepiniere {
+    background-image: linear-gradient(rgba(71, 47, 136, 0.5), rgba(71, 47, 136, 0.5)),
+        url("./src/pepinieres_d_entreprise.png");
+    object-fit: cover;
+    height: 337px;
+    width: 325px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .composantes_container .img_box .residents {
+    background-image: linear-gradient(rgba(71, 47, 136, 0.5), rgba(71, 47, 136, 0.5)),
+        url("./src/fablab.png");
+    object-fit: cover;
+    height: 337px;
+    width: 325px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .composantes_container .img_box .nos_residents {
+    background-image: linear-gradient(rgba(71, 47, 136, 0.5), rgba(71, 47, 136, 0.5)),
+        url("./src/residents.png");
+    object-fit: cover;
+    height: 337px;
+    width: 325px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .composantes_container .img_box .services {
+    background-image: linear-gradient(rgba(71, 47, 136, 0.5), rgba(71, 47, 136, 0.5)),
+        url("./src/nos_services.png");
+    object-fit: cover;
+    height: 337px;
+    width: 325px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .composantes_container .img_box div h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 250px;
+    text-align: center;
+}
+
+/* main .composantes_container .img_box .pepiniere .purple_bg{
+    background-color: #472F88;
+    height: 300px;
+    width: 300px;
+    opacity: 80%;
+    z-index: 1;
+} */
+
+main .composantes_container .img_box div h2 {
+    color: #FFF;
+    z-index: 2;
+    text-align: center;
+
+}
 
 footer {
     background-color: #472F88;
@@ -152,6 +256,7 @@ footer div h3 {
 
 footer div p {
     color: #FFF;
+    align-self: center;
 }
 
 footer div a {
@@ -166,13 +271,13 @@ footer .address {
     line-height: 1.5;
 }
 
-footer .conditions a:nth-child(1) {
-    margin-bottom: 10px;
+footer .conditions {
+    line-height: 2;
+
 }
 
-
 @media (min-width: 700px) {
-    header .header_container p{
+    header .header_container p {
         width: 50vw;
     }
 
@@ -199,7 +304,15 @@ footer .conditions a:nth-child(1) {
 
 @media (min-width: 1000px) {
 
-    main .composantes_container{
+    main .service_container .former {
+        align-self: center;
+    }
+
+    main .service_container .developper {
+        margin: 0 50px;
+    }
+
+    main .composantes_container {
         width: 90vw;
     }
 
@@ -208,5 +321,30 @@ footer .conditions a:nth-child(1) {
         flex-wrap: wrap;
         width: 100%;
     }
-}
 
+    main .composantes_container .img_box .pepiniere{
+        position: relative;
+        transition: ease-in-out;
+    }
+
+    main .composantes_container .img_box .pepiniere:hover{
+        width: 330px;
+        height: 342px;
+    }
+
+
+    main .composantes_container .img_box div .purple_bg{
+        position: absolute;
+        background-color: #472F88;
+        width: 325px;
+        height: 337px;
+        border-radius: 15px;
+        z-index: -1;
+    }
+
+  
+
+    main .composantes_container .title_composantes {
+        margin-left: 47px;
+    }
+}
